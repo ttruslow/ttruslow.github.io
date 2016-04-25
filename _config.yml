@@ -9,7 +9,7 @@ name: Tyler Truslow's Technical Developer Blog
 description: Hello! I'm a senior Computer Science major at the University of Mary Washington. This blog is a way for me to show what I'm working on, and any cool tips I've found to help me. My hope is that these posts will provide some help to others who may be working on the same types of projects as me, or students who are trying to learn this information. Thanks for visiting!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/ttruslow/ttruslow.github.io/master/images/IMG_1834.JPG
+avatar: https://raw.githubusercontent.com/ttruslow/ttruslow.github.io/master/images/headshot.jpg
 
 #
 # Flags below are optional
@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/ttruslow/ttruslow.github.io/master/ima
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: ttruslow@mail.umw.edu
   facebook:
   flickr:
   github: ttruslow
