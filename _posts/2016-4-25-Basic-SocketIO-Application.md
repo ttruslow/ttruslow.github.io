@@ -16,8 +16,22 @@ Let's Get Started:
 
 I'm starting with a brand-spanking-new Cloud 9 workspace, to limit confusion when you guys are following along. Feel free to do the same in order to help relate your app to the screen-shots provided.
 The first thing we are going to want to do is install flask and SocketIO using the commands:
+
 sudo easy_install flask
 ![_config.yml]({{ site.baseurl }}/images/1.png)
+
+
 and
+
 sudo easy_install flask-socketio
 ![_config.yml]({{ site.baseurl }}/images/2.png)
+
+
+When you get those installed properly, you should get results like you see in the pictures above.
+
+Now, let's set up our python server file:
+![_config.yml]({{ site.baseurl }}/images/2.png)
+
+And get the rest of our files in place, so that we can run the server and get an HTML page to load without errors.
+
+
