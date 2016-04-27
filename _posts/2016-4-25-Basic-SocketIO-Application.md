@@ -53,24 +53,27 @@ Now, we can finally get into the nitty gritty part of SocketIO: The Javascript. 
 Now, let me give you a quick rundown to help you to understand what all of that means!
 
 Part 1: 
-
+{% highlight javascript %}
 var simpleSocketIO = angular.module('simpleSocketIO', []);  
+{% endhighlight %}
 
 Here, we are created the angular application. Remember the line from the index.html file I told you to take note of? Here is where we define THAT application so that we can use it in the HTML code. I went out of order a little bit, but I did it so that we could focus on the Javascript code all at once! The "angular" part we imported in server.py. (Don't believe me? Go check!) and the empty brackets are where we would put any dependencies that we might have. We don't need to worry about that for our purposes.
 
 
 Part 2: 
-
+{% highlight javascript %}
 statTrackChat.controller('ChatController', function($scope){
    var socket = io.connect('https://' + document.domain + ':' + location.port + '/ssio'); 
+{% endhighlight %}   
    
 Here, we are creating the controller. The controller is the middle man between the user and the application. It makes the updates to what we are seeing on the HTML page. We have named ours "ChatController", it works using the "function"s that we define for it, and those functions use the "$scope" defined in our file. The next line, var socket = io.connect('https://' + document.domain + ':' + location.port + '/ssio');, connects our controller back to our server.py file by: 1) defining the domain created when we run our server, 2) the port used when we run our server, and 3) the namespace that we'll use in accordance with our server('/ssio').
 
 
 Part 3: 
-
+{% highlight javascript %}
 $scope.messages = []; 
 $scope.text = '';
+{% endhighlight %}
 
 These are pretty simple lines, which just define these two variables within the scope of this file. 
 
@@ -106,9 +109,9 @@ def makeConnection():
     for message in messages: 
         print(message)
         emit('message', message)
- 
+{% endhighlight %} 
+
 This function works with its counterpart from 'controller.js' to print a message notifying the user that a connection has been made, and emits every message in the list of messages (so just the two test messages when we start the server) so that the controller can display it on the HTML page. 
-{% endhighlight %}
 
 
 Next is 'message':
