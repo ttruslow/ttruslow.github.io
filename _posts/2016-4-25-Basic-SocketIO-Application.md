@@ -97,6 +97,7 @@ Finally, we must return back to where we started -- server.py -- to write the se
 
 The next part is just two fairly simple functions, which relate directly to the two 'socketio.on' functions from 'controller.js' which we discussed earlier. The first is 'connect':
 
+{% highlight python %}
 @socketio.on('connect', namespace='/ssio')
 def makeConnection():
     print ('connected')
@@ -107,11 +108,11 @@ def makeConnection():
         emit('message', message)
  
 This function works with its counterpart from 'controller.js' to print a message notifying the user that a connection has been made, and emits every message in the list of messages (so just the two test messages when we start the server) so that the controller can display it on the HTML page. 
-
+{% endhighlight %}
 
 
 Next is 'message':
-
+{% highlight python %}
 @socketio.on('message', namespace='/ssio')
 def new_message(message):
     print("TEST IN MESSAGE")
@@ -119,6 +120,7 @@ def new_message(message):
     print(tmp)
     messages.append(tmp)
     emit('message', tmp, broadcast=True)
+{% endhighlight %}
 
 This 'send()' function is called when the user presses the "Submit" button, and that function emits this one. This function then calls the 'message' function from the controller file, and the controller updates the HTML page with input from the user. 
 
