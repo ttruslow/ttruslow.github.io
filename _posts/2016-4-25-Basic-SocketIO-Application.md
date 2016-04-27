@@ -154,7 +154,7 @@ Let's test it out now. Click on 'server.py' and click "Run". Then input the url 
 
 
 
-Now it's time for the real test. Type something into the input bar, and click the "Submit" button. As soon as you press "Submit", you should see your own message show up at the bottom of the list of displayed messages:
+Now it's time for the real test. Type something into the input bar, and click the "Submit" button (I used "Hello world"). As soon as you press "Submit", you should see your own message show up at the bottom of the list of displayed messages:
 
 ![_config.yml]({{ site.baseurl }}/images/9.png)
 
