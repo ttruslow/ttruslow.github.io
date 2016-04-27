@@ -17,7 +17,7 @@ Let's Get Started:
 I'm starting with a brand-spanking-new Cloud 9 workspace to limit confusion when you guys are following along. Feel free to do the same in order to help relate your app to the screen-shots provided.
 The first thing we are going to want to do is install flask and SocketIO using the commands:
 
-{% highlight command %}
+{% highlight python %}
 sudo easy_install flask
 {% endhighlight %}
 ![_config.yml]({{ site.baseurl }}/images/1.png)
@@ -25,7 +25,7 @@ sudo easy_install flask
 
 and
 
-{% highlight command %}
+{% highlight python %}
 sudo easy_install flask-socketio
 {% endhighlight %}
 ![_config.yml]({{ site.baseurl }}/images/2.png)
